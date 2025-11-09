@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    
+
+    <header
+        class="row w-100 h-15 d-flex justify-content-center align-content-center m-0 bg-orange flex-nowrap position-sticky top-0 z-3">
+        <div
+            class="col-auto col-md-6 offset-0 offset-md-3 d-flex align-items-center justify-content-center flex-column gap-3">
+            <h1 class="text-center text-white mb-0 p-0">
+                COMEDOR IES SERPIS</h1>
+            <nav>
+                <a href="index.html" class="btn rounded-0 text-black bg-white hover-btn px-4 py-1">Inicio</a>
+                <a href="login.html" class="btn rounded-0 text-black bg-white hover-btn px-4 py-1">Login</a>
+                <a href="form.html" class="btn rounded-0 text-black bg-white hover-btn px-4 py-1">Reseña</a>
+            </nav>
+        </div>
+        <div class="col-2 p-0 d-flex justify-content-end align-items-center">
+            <img src="/assets/img/avatar.png" alt="" class="img-fluid mh-100">
+        </div>
+    </header>
+
+    <main class="container w-100 h-85 d-flex justify-content-center align-items-center p-0 mw-100 bg-gray">
+
+        <form
+            class="card h-auto col-11 col-sm-11 col-md-10 col-lg-8 col-xl-8 col-xxl-6 h-50 bg-white rounded-0 align-items-center p-4"
+            action="index.html">
+            <h2 class="text-center fw-bold fs-1 m-0 py-5">RESEÑA COMEDOR</h2>
+            <div class="row w-100 h-auto gap-3">
+                <div class="col-12 col-md-6 order-1 order-md-0">
+                    <div class="row">
+                        <span class="col-5 d-flex justify-content-start align-items-center">Primer plato: </span>
+                        <div class="rating-card col-auto d-flex justify-content-end align-items-center">
+                            <div class="star-rating animated-stars">
+                                <input type="radio" name="rating-first-course" value="5" id="rating-first-course-5">
+                                <label class="bi bi-star-fill" for="rating-first-course-5"></label>
+                                <input type="radio" name="rating-first-course" value="4" id="rating-first-course-4">
+                                <label class="bi bi-star-fill" for="rating-first-course-4"></label>
+                                <input type="radio" name="rating-first-course" value="3" id="rating-first-course-3">
+                                <label class="bi bi-star-fill" for="rating-first-course-3"></label>
+                                <input type="radio" name="rating-first-course" value="2" id="rating-first-course-2">
+                                <label class="bi bi-star-fill" for="rating-first-course-2"></label>
+                                <input type="radio" name="rating-first-course" value="1" id="rating-first-course-1">
+                                <label class="bi bi-star-fill" for="rating-first-course-1"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-5 d-flex justify-content-start align-items-center">Segundo plato: </span>
+                        <div class="rating-card col-auto d-flex justify-content-end align-items-center">
+                            <div class="star-rating animated-stars">
+                                <input type="radio" name="rating-second-course" value="5" id="rating-second-course-5">
+                                <label class="bi bi-star-fill" for="rating-second-course-5"></label>
+                                <input type="radio" name="rating-second-course" value="4" id="rating-second-course-4">
+                                <label class="bi bi-star-fill" for="rating-second-course-4"></label>
+                                <input type="radio" name="rating-second-course" value="3" id="rating-second-course-3">
+                                <label class="bi bi-star-fill" for="rating-second-course-3"></label>
+                                <input type="radio" name="rating-second-course" value="2" id="rating-second-course-2">
+                                <label class="bi bi-star-fill" for="rating-second-course-2"></label>
+                                <input type="radio" name="rating-second-course" value="1" id="rating-second-course-1">
+                                <label class="bi bi-star-fill" for="rating-second-course-1"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-5 d-flex justify-content-start align-items-center">Postre: </span>
+                        <div class="rating-card col-auto d-flex justify-content-end align-items-center">
+                            <div class="star-rating animated-stars">
+                                <input type="radio" name="rating-dessert" value="5" id="rating-dessert-5">
+                                <label class="bi bi-star-fill" for="rating-dessert-5"></label>
+                                <input type="radio" name="rating-dessert" value="4" id="rating-dessert-4">
+                                <label class="bi bi-star-fill" for="rating-dessert-4"></label>
+                                <input type="radio" name="rating-dessert" value="3" id="rating-dessert-3">
+                                <label class="bi bi-star-fill" for="rating-dessert-3"></label>
+                                <input type="radio" name="rating-dessert" value="2" id="rating-dessert-2">
+                                <label class="bi bi-star-fill" for="rating-dessert-2"></label>
+                                <input type="radio" name="rating-dessert" value="1" id="rating-dessert-1">
+                                <label class="bi bi-star-fill" for="rating-dessert-1"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-3 col-12 col-md-6 order-first order-1">
+                    <input type="email" class="rounded-0 ps-2 border-0 shadow h-3-rem" name="email" id="email"
+                        placeholder="Correo electrónico" required>
+                    <textarea class="rounded-0 ps-2 border-0 shadow h-10-rem" name="comment" id="comment"
+                        placeholder="Comentario..."></textarea>
+                </div>
+                <div class="row order-last">
+                    <input class="col-12 col-md-6 btn bg-orange hover-btn rounded-0 text-white" type="submit"
+                        value="Enviar">
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="bg-orange text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <p class="mb-0 text-center">
+                        &copy; 2025 Colegio IES Serpis. Todos los derechos reservados.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center align-content-center">
+                    <a href="https://www.facebook.com" class="text-white me-3" target="_blank" aria-label="Facebook">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="text-white me-3" target="_blank" aria-label="Instagram">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="text-white me-3" target="_blank" aria-label="Twitter">
+                        <i class="bi bi-twitter-x fs-4"></i>
+                    </a>
+                    <a href="https://www.youtube.com" class="text-white" target="_blank" aria-label="YouTube">
+                        <i class="bi bi-youtube fs-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

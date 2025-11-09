@@ -1,9 +1,13 @@
-:root{
+:root {
     --orange: #ff6932;
+    --orange-dark: #ff4400;
     --gray: #dcdcdc;
 }
 
-html, body{
+/* Se puede poner en con boostrap pero queda feo para el desarrollo */
+/*Boostrap --> <html class="w-100 h-100 m-0 p-0"> <body class="w-100 h-100 m-0 p-0"> */
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -11,18 +15,64 @@ html, body{
     box-sizing: border-box;
 }
 
-.bg-orange{
+.bg-orange {
     background-color: var(--orange);
 }
 
-.bg-gray{
+.bg-gray {
     background-color: var(--gray);
 }
 
-.h-15{
+.h-15 {
     height: 15%;
 }
 
-.h-85{
+.h-85 {
     height: 85%;
+}
+
+.hover-scale {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.01);
+}
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: var(--gray);
+    font-size: 24px;
+    padding: 0 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input:checked~label {
+    color: #ffc107;
+}
+
+.h-10-rem {
+    height: 10rem;
+}
+
+.h-3-rem {
+    height: 3rem;
+}
+
+.hover-btn:hover {
+    background-color: var(--orange-dark);
 }
